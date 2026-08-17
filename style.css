@@ -1,346 +1,261 @@
-/* =========================================
-   NEXARA - DISEÑO PRINCIPAL
-========================================= */
-
+/* ===== CONFIGURACIÓN GENERAL ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f4f7fb;
-    color: #172033;
-    line-height: 1.7;
+    background: #f5f7fa;
+    color: #1f2937;
+    line-height: 1.6;
 }
 
-
-/* =========================================
-   ENCABEZADO
-========================================= */
-
+/* ===== ENCABEZADO ===== */
 header {
-    background: linear-gradient(135deg, #071a52, #123c9c);
+    background: linear-gradient(135deg, #0f766e, #14b8a6);
     color: white;
-    text-align: center;
-    padding: 25px 20px;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-header h1 {
-    font-size: 46px;
-    font-weight: 800;
-    letter-spacing: 6px;
-    margin-bottom: 2px;
-}
-
-header p {
-    font-size: 13px;
-    letter-spacing: 4px;
-    margin-bottom: 18px;
-    opacity: 0.9;
-}
-
-
-/* =========================================
-   MENÚ
-========================================= */
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 13px;
+    margin-left: 25px;
     font-weight: bold;
-    padding: 8px 13px;
-    border-radius: 20px;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.18);
-    transform: translateY(-1px);
+    color: #ccfbf1;
 }
 
-
-/* =========================================
-   CONTENIDO
-========================================= */
-
-main {
-    max-width: 1150px;
-    margin: auto;
+/* ===== SECCIÓN PRINCIPAL ===== */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(
+        135deg,
+        #ecfeff,
+        #f0fdfa,
+        #ffffff
+    );
 }
 
-section {
-    background: white;
-    margin: 30px 20px;
-    padding: 45px;
-    border-radius: 22px;
-    box-shadow: 0 8px 28px rgba(15, 23, 42, 0.08);
+.hero-content {
+    max-width: 850px;
 }
 
-section h2 {
-    color: #123c9c;
-    font-size: 30px;
+.hero h1 {
+    font-size: 55px;
+    color: #0f766e;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.hero h2 {
+    font-size: 28px;
+    color: #374151;
     margin-bottom: 20px;
 }
 
-section h3 {
-    color: #172033;
-    margin: 18px 0 10px;
+.hero p {
+    font-size: 20px;
+    color: #4b5563;
+    margin-bottom: 30px;
 }
 
-section p {
-    margin-bottom: 12px;
-}
-
-
-/* =========================================
-   PORTADA
-========================================= */
-
-section:first-child {
-    margin-top: 35px;
-    padding: 85px 40px;
-    text-align: center;
-    background: linear-gradient(135deg, #e8f1ff, #ffffff);
-    border: 1px solid #d7e5ff;
-}
-
-section:first-child h2 {
-    font-size: 42px;
-    color: #071a52;
-}
-
-section:first-child h3 {
-    font-size: 25px;
-    color: #123c9c;
-}
-
-
-/* =========================================
-   BOTONES
-========================================= */
-
-a[href="#inscripcion"],
-a[href*="wa.me"] {
+/* ===== BOTÓN ===== */
+.btn {
     display: inline-block;
+    padding: 15px 30px;
+    background: #f59e0b;
     color: white;
-    background: linear-gradient(135deg, #16a34a, #15803d);
     text-decoration: none;
-    font-weight: bold;
-    padding: 14px 28px;
     border-radius: 30px;
-    margin-top: 15px;
-    box-shadow: 0 6px 15px rgba(22, 163, 74, 0.25);
-    transition: 0.3s ease;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(245, 158, 11, 0.35);
 }
 
-a[href="#inscripcion"]:hover,
-a[href*="wa.me"]:hover {
+.btn:hover {
+    background: #d97706;
     transform: translateY(-3px);
-    box-shadow: 0 9px 20px rgba(22, 163, 74, 0.3);
 }
 
-
-/* =========================================
-   CURSOS
-========================================= */
-
-#cursos ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-bottom: 25px;
+/* ===== SECCIONES ===== */
+section {
+    padding: 70px 8%;
 }
 
-#cursos li {
-    background: #f1f6ff;
-    border: 1px solid #d8e6ff;
-    border-left: 5px solid #2455c3;
-    padding: 13px 16px;
-    border-radius: 10px;
-    font-weight: 600;
-}
-
-
-/* =========================================
-   BECAS
-========================================= */
-
-#becas {
-    background: linear-gradient(135deg, #fff8e8, #ffffff);
-    border: 2px solid #f4c95d;
-}
-
-#becas h2 {
-    color: #a16207;
-}
-
-#becas strong {
-    color: #92400e;
-}
-
-
-/* =========================================
-   ENCUENTRO DEPORTIVO
-========================================= */
-
-#encuentro {
-    background: linear-gradient(135deg, #ecfdf5, #ffffff);
-    border: 2px solid #7bd7a5;
-}
-
-#encuentro h2 {
-    color: #15803d;
-}
-
-
-/* =========================================
-   INSCRIPCIONES
-========================================= */
-
-#inscripcion {
+section h2 {
     text-align: center;
-    background: linear-gradient(135deg, #edf4ff, #ffffff);
-    border: 2px solid #b9d1ff;
+    font-size: 35px;
+    color: #0f766e;
+    margin-bottom: 40px;
 }
 
-#inscripcion h2 {
-    color: #123c9c;
+/* ===== TARJETAS DE CURSOS ===== */
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-#inscripcion h3 {
-    color: #071a52;
+.curso {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    border-top: 5px solid #14b8a6;
 }
 
+.curso:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
 
-/* =========================================
-   PIE DE PÁGINA
-========================================= */
+.curso h3 {
+    color: #0f766e;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
 
-footer {
-    background: #071a52;
+/* ===== INFORMACIÓN ===== */
+.info {
+    background: #0f766e;
     color: white;
     text-align: center;
-    padding: 35px 20px;
-    margin-top: 50px;
+}
+
+.info h2 {
+    color: white;
+}
+
+.info p {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+/* ===== PRECIO ===== */
+.precio {
+    background: white;
+    text-align: center;
+}
+
+.precio-box {
+    max-width: 500px;
+    margin: auto;
+    padding: 40px 25px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #f0fdfa, #ffffff);
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+.precio-box .monto {
+    font-size: 55px;
+    font-weight: 800;
+    color: #f59e0b;
+    margin: 15px 0;
+}
+
+.precio-box p {
+    font-size: 18px;
+    color: #4b5563;
+}
+
+/* ===== WHATSAPP ===== */
+.whatsapp {
+    text-align: center;
+    background: #ecfdf5;
+}
+
+.whatsapp h2 {
+    color: #047857;
+}
+
+.whatsapp-number {
+    font-size: 25px;
+    font-weight: bold;
+    color: #047857;
+    margin: 20px 0;
+}
+
+/* ===== PIE DE PÁGINA ===== */
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
 }
 
 footer p {
     margin: 5px;
-    opacity: 0.9;
 }
 
-
-/* =========================================
-   RESPONSIVE - CELULARES
-========================================= */
-
-@media (max-width: 800px) {
+/* ===== ADAPTACIÓN PARA CELULARES ===== */
+@media (max-width: 768px) {
 
     header {
-        padding: 20px 12px;
-    }
-
-    header h1 {
-        font-size: 38px;
-        letter-spacing: 5px;
-    }
-
-    nav {
-        gap: 4px;
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 5%;
     }
 
     nav a {
-        font-size: 12px;
-        padding: 7px 9px;
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 17px;
     }
 
     section {
-        margin: 20px 12px;
-        padding: 30px 22px;
-        border-radius: 18px;
-    }
-
-    section:first-child {
-        padding: 60px 20px;
-    }
-
-    section:first-child h2 {
-        font-size: 32px;
-    }
-
-    section:first-child h3 {
-        font-size: 21px;
+        padding: 50px 5%;
     }
 
     section h2 {
-        font-size: 27px;
+        font-size: 29px;
     }
 
-    #cursos ul {
-        grid-template-columns: 1fr;
+    .precio-box .monto {
+        font-size: 45px;
     }
-
-}
-
-
-/* =========================================
-   CELULARES PEQUEÑOS
-========================================= */
-
-@media (max-width: 480px) {
-
-    header h1 {
-        font-size: 32px;
-    }
-
-    header p {
-        font-size: 11px;
-        letter-spacing: 3px;
-    }
-
-    nav a {
-        font-size: 11px;
-        padding: 6px 8px;
-    }
-
-    section {
-        padding: 25px 18px;
-    }
-
-    section:first-child {
-        padding: 50px 18px;
-    }
-
-    section:first-child h2 {
-        font-size: 28px;
-    }
-
-    section:first-child h3 {
-        font-size: 19px;
-    }
-
-    section h2 {
-        font-size: 24px;
-    }
-
 }

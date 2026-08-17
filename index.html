@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXARA | Academia Virtual</title>
 
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f9fc;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #14213d;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #14213d, #315a9b);
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            background: #fca311;
+            color: #14213d;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #14213d;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            color: #315a9b;
+            margin-bottom: 10px;
+        }
+
+        .precio {
+            background: #eef3fa;
+        }
+
+        .precio strong {
+            font-size: 40px;
+            color: #fca311;
+        }
+
+        footer {
+            background: #14213d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">NEXARA</div>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h1>NEXARA</h1>
+
+    <p>
+        Academia Virtual para estudiantes de secundaria.
+        Aprende, prepárate y alcanza tus objetivos académicos.
+    </p>
+
+    <a class="boton" href="#contacto">Quiero inscribirme</a>
+</section>
+
+<section id="cursos">
+    <h2>Nuestros cursos</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Matemática</h3>
+            <p>Fortalece tus conocimientos y desarrolla tus habilidades matemáticas.</p>
+        </div>
+
+        <div class="card">
+            <h3>Comunicación</h3>
+            <p>Mejora tu comprensión lectora, escritura y expresión.</p>
+        </div>
+
+        <div class="card">
+            <h3>Razonamiento</h3>
+            <p>Desarrolla tu capacidad de análisis y resolución de problemas.</p>
+        </div>
+
+        <div class="card">
+            <h3>Ciencias</h3>
+            <p>Aprende Física, Química y Biología de manera práctica.</p>
+        </div>
+
+        <div class="card">
+            <h3>Historia y Geografía</h3>
+            <p>Comprende los principales acontecimientos históricos y geográficos.</p>
+        </div>
+
+        <div class="card">
+            <h3>Simulacros</h3>
+            <p>Pon a prueba tus conocimientos y mide tu progreso.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="precio">
+    <h2>Inscripción</h2>
+
+    <p>Primeros 30 estudiantes</p>
+
+    <strong>S/ 50</strong>
+
+    <p>Modalidad virtual</p>
+
+    <a class="boton" href="#contacto">Inscribirme</a>
+</section>
+
+<section id="nosotros">
+    <h2>¿Qué es NEXARA?</h2>
+
+    <p>
+        NEXARA es una academia virtual orientada a estudiantes
+        de secundaria, creada para brindar una preparación
+        académica accesible, cercana y de calidad.
+    </p>
+</section>
+
+<section id="contacto">
+    <h2>Contáctanos</h2>
+
+    <p>¿Quieres formar parte de NEXARA?</p>
+
+    <p>
+        Escríbenos para recibir información sobre nuestras clases,
+        horarios e inscripciones.
+    </p>
+
+    <a class="boton" href="https://wa.me/51943440476">
+        WhatsApp
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 NEXARA - Academia Virtual</p>
+</footer>
+
+</body>
+</html>

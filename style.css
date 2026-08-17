@@ -1,1 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+header {
+    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+}
+
+header p {
+    font-size: 15px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    background: white;
+    margin: 30px 20px;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+section:first-child {
+    text-align: center;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    padding: 70px 30px;
+}
+
+h2 {
+    color: #1d4ed8;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin: 15px 0;
+    color: #0f172a;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+a[href="#inscripcion"],
+a[href*="wa.me"] {
+    display: inline-block;
+    background: #16a34a;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+a[href="#inscripcion"]:hover,
+a[href*="wa.me"]:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* =========================
+   CURSOS
+========================= */
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+li {
+    background: #eff6ff;
+    padding: 13px 18px;
+    border-radius: 10px;
+    border-left: 5px solid #2563eb;
+}
+
+
+/* =========================
+   BECAS
+========================= */
+
+#becas {
+    background: linear-gradient(135deg, #fff7ed, #fffbeb);
+    border: 2px solid #f59e0b;
+}
+
+#becas h2 {
+    color: #b45309;
+}
+
+
+/* =========================
+   ENCUENTRO DEPORTIVO
+========================= */
+
+#encuentro {
+    background: linear-gradient(135deg, #ecfdf5, #f0fdf4);
+    border: 2px solid #16a34a;
+}
+
+#encuentro h2 {
+    color: #15803d;
+}
+
+
+/* =========================
+   INSCRIPCIONES
+========================= */
+
+#inscripcion {
+    text-align: center;
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+}
+
+#inscripcion h2 {
+    color: #1d4ed8;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 7px 9px;
+    }
+
+    section {
+        margin: 20px 12px;
+        padding: 25px 20px;
+    }
+
+    section:first-child {
+        padding: 50px 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+    }
+
+}

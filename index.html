@@ -9,7 +9,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -23,26 +23,41 @@
     <!-- ================= HEADER ================= -->
     <header class="header">
 
-        <div class="logo">
-            <span class="logo-icon">N</span>
-            <div>
-                <strong>ACADEMIA</strong>
-                <span>NEXARA</span>
-            </div>
+        <div class="header-top">
+
+            <a href="#inicio" class="logo">
+                <img src="assets/logo-nexara.png" alt="Academia Nexara" class="logo-img">
+            </a>
+
+            <a href="tel:+51987819061" class="header-phone">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <small>Central telefónica</small>
+                    <strong>987 819 061</strong>
+                </div>
+            </a>
+
+            <a href="https://wa.me/51987819061" class="header-whatsapp" target="_blank" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
         </div>
 
-        <nav class="navbar">
-            <a href="#inicio">Inicio</a>
-            <a href="#cursos">Cursos</a>
-            <a href="#horarios">Horarios</a>
-            <a href="#precios">Precios</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+        <div class="header-bottom">
 
-        <a href="#precios" class="header-btn">
-            Matricúlate en Línea
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
+            <nav class="navbar">
+                <a href="#inicio">Inicio</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#horarios">Horarios</a>
+                <a href="#precios">Precios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <a href="#precios" class="header-btn">
+                Matrícula en Línea
+            </a>
+
+        </div>
 
     </header>
 
@@ -53,23 +68,16 @@
         <section class="hero" id="inicio">
 
             <div class="hero-background">
-                <div class="glow glow-1"></div>
-                <div class="glow glow-2"></div>
-                <div class="grid-background"></div>
+                <div class="field-lines"></div>
             </div>
 
             <div class="hero-content">
-
-                <div class="hero-badge">
-                    <i class="fa-solid fa-bolt"></i>
-                    GRUPOS PEQUEÑOS: MÁXIMO 30 ESTUDIANTES
-                </div>
 
                 <p class="hero-top">
                     ACADEMIA VIRTUAL · SECUNDARIA
                 </p>
 
-                <h1>
+                <h1 class="hero-title">
                     ¡TU MEJOR DECISIÓN
                     <span>PARA DESTACAR!</span>
                 </h1>
@@ -105,10 +113,10 @@
                     </div>
 
                     <div class="info-item">
-                        <i class="fa-solid fa-video"></i>
+                        <i class="fa-solid fa-users"></i>
                         <div>
-                            <strong>Clases en vivo</strong>
-                            <span>Desde cualquier lugar</span>
+                            <strong>Grupos pequeños</strong>
+                            <span>Máximo 30 estudiantes</span>
                         </div>
                     </div>
 
@@ -118,45 +126,44 @@
 
             <div class="hero-visual">
 
-                <div class="visual-card card-main">
+                <p class="hero-caption">
+                    TENEMOS EL EQUIPO IDEAL PARA
+                    <strong>HACERTE TRIUNFAR</strong>
+                </p>
 
-                    <div class="visual-top">
+                <div class="photo-frame">
+                    <img src="assets/hero-profesionales.png" alt="Estudiantes de Academia Nexara que alcanzaron distintas carreras profesionales" class="hero-photo">
+
+                    <div class="live-pill">
                         <span class="live-dot"></span>
                         EN VIVO
                     </div>
 
-                    <div class="visual-icon">
-                        <i class="fa-solid fa-graduation-cap"></i>
+                    <div class="modality-tag">
+                        <i class="fa-solid fa-laptop"></i>
+                        MODALIDAD<br>VIRTUAL
                     </div>
 
-                    <h3>PREPÁRATE<br>PARA DESTACAR</h3>
-
-                    <p>
-                        Conocimiento + práctica + disciplina
-                    </p>
-
-                    <div class="visual-line"></div>
-
-                    <div class="visual-stat">
-                        <strong>30</strong>
-                        <span>ESTUDIANTES<br>POR GRUPO</span>
+                    <div class="start-badge">
+                        <span>Inicio</span>
+                        <strong>1 Agosto</strong>
                     </div>
 
-                </div>
+                    <div class="floating-card floating-card-1">
+                        <i class="fa-solid fa-calculator"></i>
+                        <span>Matemática</span>
+                    </div>
 
-                <div class="floating-card floating-card-1">
-                    <i class="fa-solid fa-calculator"></i>
-                    <span>Matemática</span>
-                </div>
+                    <div class="floating-card floating-card-2">
+                        <i class="fa-solid fa-flask"></i>
+                        <span>Ciencias</span>
+                    </div>
 
-                <div class="floating-card floating-card-2">
-                    <i class="fa-solid fa-flask"></i>
-                    <span>Ciencias</span>
-                </div>
+                    <div class="floating-card floating-card-3">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>Resultados</span>
+                    </div>
 
-                <div class="floating-card floating-card-3">
-                    <i class="fa-solid fa-book-open"></i>
-                    <span>Humanidades</span>
                 </div>
 
             </div>
@@ -565,11 +572,9 @@
         <!-- ================= CTA ================= -->
         <section class="final-cta" id="contacto">
 
-            <div class="cta-glow"></div>
-
             <div class="cta-content">
 
-                <span class="section-tag">
+                <span class="section-tag light">
                     <i class="fa-solid fa-bolt"></i>
                     TU MOMENTO ES AHORA
                 </span>
@@ -602,11 +607,7 @@
 
             <div class="footer-brand">
                 <div class="logo">
-                    <span class="logo-icon">N</span>
-                    <div>
-                        <strong>ACADEMIA</strong>
-                        <span>NEXARA</span>
-                    </div>
+                    <img src="assets/logo-nexara.png" alt="Academia Nexara" class="logo-img">
                 </div>
 
                 <p>
@@ -651,10 +652,13 @@
     </footer>
 
 
-    <!-- WhatsApp flotante -->
-    <a href="https://wa.me/51987819061?text=Hola%20Nexara%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20academia." class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+    <!-- Botones flotantes -->
+    <a href="tel:+51987819061" class="float-btn float-call" aria-label="Llamar">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <a href="https://wa.me/51987819061?text=Hola%20Nexara%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20academia." class="float-btn float-whatsapp" target="_blank" aria-label="Contactar por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
-        <span>¿Tienes dudas?</span>
     </a>
 
 </body>
